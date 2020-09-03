@@ -5,11 +5,13 @@ Use the [HERE.com APIs](https://developer.here.com/documentation) to build maps,
 
 The HERE and IBM Developer Advocacy teams, with welcome assistance from our developer ecosystems, are planning to create these node-red-contrib-here-maps nodes so that it is easy for Node-RED developers to incorporate maps, navigation and other geolocation services into your Node-RED flows.  Join us on this journey!
 
-## Install (Not yet implemented)
+## Install
 
-Either use the Editor - Menu - Manage Palette - Install option, or run the following command in your Node-RED user directory (typically `~/.node-red`).
+This alpha version package has not yet been pushed to NPM.  Install it directly from my github repo.
+
+Run the following command in your Node-RED user directory (typically `~/.node-red`).
 ```
-$ npm install node-red-contrib-here-maps
+$ npm install github:johnwalicki/node-red-contrib-here-maps
 ```
 
 ## Register
@@ -20,7 +22,7 @@ To use **HERE.com services**, you need an **HERE API key**.  [Register for a HER
 
 - [Install Node-RED](https://nodered.org/docs/getting-started/) on your system or in the cloud.
 
-## Node-RED examples:
+## Node-RED HERE examples:
 ---
 ### A flow that displays a Navigation Route on a map
 
