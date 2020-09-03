@@ -41,7 +41,7 @@ In this [GitHub example](https://github.com/johnwalicki/Node-RED-HERE-Navigation
 
 ___
 
-Enjoy!  Give us [feedback](https://github.com/johnwalicki/node-red-contrib-here-maps/issues) if you have suggestions on how to improve this tutorial.
+Enjoy!  Give us [feedback](https://github.com/johnwalicki/node-red-contrib-here-maps/issues) if you have suggestions on how to improve this node.
 
 ## License
 
