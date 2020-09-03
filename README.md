@@ -3,7 +3,7 @@ A set of Node-RED nodes that encapsulate the HERE APIs and Maps
 
 Use the [HERE.com APIs](https://developer.here.com/documentation) to build maps, navigation and other geolocation services into your Node-RED flows.
 
-The HERE and IBM Developer Advocacy teams, with welcome assistance from our developer ecosystems, are planning to create these node-red-contrib-here-maps nodes so that is easy for Node-RED developers to incorporate maps, navigation and other geolocation services into your Node-RED flows.  Join us on this journey!
+The HERE and IBM Developer Advocacy teams, with welcome assistance from our developer ecosystems, are planning to create these node-red-contrib-here-maps nodes so that it is easy for Node-RED developers to incorporate maps, navigation and other geolocation services into your Node-RED flows.  Join us on this journey!
 
 ## Install (Not yet implemented)
 
@@ -26,7 +26,7 @@ To use **HERE.com services**, you need an **HERE API key**.  [Register for a HER
 
 ![HERE Navigation Dashboard](https://raw.githubusercontent.com/johnwalicki/Node-RED-HERE-Navigation/master/screenshots/Node-RED-HERE-Navigation-dashboard.png?raw=true "HERE Navigation Dashboard")
 
-In this [GitHub example](https://github.com/johnwalicki/Node-RED-HERE) you can learn how to call the HERE Navigation Routing API and build a Node-RED dashboard that will take you safely to your destination.
+In this [GitHub example](https://github.com/johnwalicki/Node-RED-HERE-Navigation) you can learn how to call the HERE Navigation Routing API and build a Node-RED dashboard that will take you safely to your destination.
 
 ---
 
