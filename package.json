@@ -25,7 +25,8 @@
   "homepage": "https://github.com/johnwalicki/node-red-contrib-here-maps#readme",
   "node-red": {
     "nodes": {
-      "here-routing": "here-routing.js"
+      "here-routing": "here-routing.js",
+      "here-geocode": "here-geocode.js"
     }
   },
   "dependencies": {
