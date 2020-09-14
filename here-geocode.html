@@ -1,41 +1,4 @@
 <script type="text/javascript">
-  RED.nodes.registerType("hereapikey", {
-    category: "config",
-    defaults: {
-      name: {value:"", required: false}
-    },
-    credentials: {
-      apikey: {type: "password"}
-    },
-    label: function() {
-      return this.name;
-    }
-  });
-</script>
-
-<script type="text/x-red" data-template-name="hereapikey">
-<div class="form-tips">
-   <p>Register at <a href="https://developer.here.com" target="_new">developer.here.com</a> for a HERE API Key.
-</div>
-<div class="form-row">
-  <label for="node-config-input-apikey"><i class="fa fa-key"></i> API Key</label>
-  <input type="password" id="node-config-input-apikey">
-</div>
-<div class="form-row">
-  <label for="node-config-input-name"><i class="fa fa-tag"></i> Config Name</label>
-  <input type="text" id="node-config-input-name">
-</div>
-</script>
-
-<script type="text/x-red" data-help-name="hereapikey">
-<p>Enter the API Key assigned from HERE.com<br />
-<ul>
-  <li>Register for a <a href="https://developer.here.com" target="_new">developer.here.com</a> API key.
-</ul>
-</script>
-
-
-<script type="text/javascript">
   RED.nodes.registerType('here-geocode',{
     category: 'location',
     color: "#FFD700",
@@ -44,7 +7,6 @@
     outputs:1,
     defaults: {
       name: { value:""},
-      lon_lat: {value:""},
       query: {value:""},
       apikey: {value:"", type:"hereapikey",required: true}
     },
@@ -60,12 +22,8 @@
     <input type="text" id="node-input-apikey">
   </div>
   <div class="form-row">
-    <label for="node-lon-lat-input"><i class="fa fa-globe"></i> Longitude & Latitude</label>
-    <input type="text" id="node-lon-lat-input" placeholder="40.74,-73.99">
-  </div>
-  <div class="form-row">
-    <label for="node-query-input"><i class="fa fa-globe"></i>query</label>
-    <input type="text" id="node-query-input" placeholder="">
+    <label for="node-input-query"><i class="fa fa-globe"></i>query</label>
+    <input type="text" id="node-input-query" placeholder="">
   </div>
   <div class="form-row">
     <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
@@ -80,7 +38,6 @@
 for more information about the <strong>HERE Calculate Route API</strong>.</p>
   <h3>Inputs:</h3>
   <dl class="message-properties">
-    <dt class="optional">msg.hereparams.lon_lat <span class="property-type">string</span></dt>
     <dt class="optional">msg.hereparams.query <span class="property-type">string</span></dt>
     <dd>If specified, override edit panel.</dd>
   </dl>
