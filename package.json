@@ -2,13 +2,13 @@
   "name": "node-red-contrib-here-maps",
   "version": "0.1.0",
   "description": "Node-RED nodes for HERE maps, navigation and geolocation APIs",
-  "main": "here-geocode.js",
+  "main": "here-routing.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nerdingitout/node-red-contrib-here-maps.git"
+    "url": "git+https://github.com/johnwalicki/node-red-contrib-here-maps.git"
   },
   "keywords": [
     "node-red",
@@ -20,14 +20,13 @@
   "author": "John Walicki <johnwalicki@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/nerdingitout/node-red-contrib-here-maps/issues"
+    "url": "https://github.com/johnwalicki/node-red-contrib-here-maps/issues"
   },
-  "homepage": "https://github.com/nerdingitout/node-red-contrib-here-maps#readme",
+  "homepage": "https://github.com/johnwalicki/node-red-contrib-here-maps#readme",
   "node-red": {
     "nodes": {
-      "here-geocode": "here-geocode.js",
-      "here-routing": "here-routing.js"
-      
+      "here-routing": "here-routing.js",
+      "here-geocode": "here-geocode.js"
     }
   },
   "dependencies": {
