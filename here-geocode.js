@@ -30,9 +30,6 @@ module.exports = function(RED) {
       //in, optional parameter
       if( typeof msg.hereparams.in_var == 'undefined' ) {
         msg.hereparams.in_var = in_var; // take the default or the node setting
-      } else {
-        // passed in param, override default or node setting
-        msg.hereparams.in_var = msg.hereparams.in_var;
       }
       
       //Add the optional parameters to the api call if they are not empty
