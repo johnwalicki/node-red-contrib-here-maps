@@ -35,6 +35,8 @@ In this [GitHub example](https://github.com/johnwalicki/Node-RED-HERE-Navigation
 ![image](https://user-images.githubusercontent.com/36239840/91075370-04780200-e64f-11ea-8cd3-cd2f6cfb2bbd.png)
 
 In this [GitHub example](https://github.com/nerdingitout/Node-RED-HERE) you can learn how to call the HERE Geocoding API and build a Node-RED dashboard that shows real-time tweets and their locations on a map.
+
+---
 ### Authors
 
 - [John Walicki](https://github.com/johnwalicki)
