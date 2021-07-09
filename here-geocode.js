@@ -28,13 +28,18 @@ module.exports = function(RED) {
       var api_str='https://geocode.search.hereapi.com/v1/geocode?q='+msg.hereparams.query+'&apiKey='+apiKey;
 
       //in, optional parameter
-      if( typeof msg.hereparams.in_var == 'undefined' ) {
-        msg.hereparams.in_var = in_var; // take the default or the node setting
+      if( typeof msg.hereparams.in == 'undefined' ) {
+        msg.hereparams.in = in_var; // take the default or the node setting
       }
-      
+
       //Add the optional parameters to the api call if they are not empty
-      if(msg.hereparams.in_var!=""){
-        api_str=api_str+'&in=countryCode:'+msg.hereparams.in_var;
+      if(msg.hereparams.in != "") {
+        var area = msg.hereparams.in;
+        if( area.includes( "countryCode") ) {
+          api_str=api_str + '&in' + msg.hereparams.in;
+        } else {
+          api_str=api_str + '&in=countryCode:'+msg.hereparams.in;
+        }
       }
 
       (async () => {
