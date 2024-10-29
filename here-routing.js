@@ -66,10 +66,10 @@ module.exports = function(RED) {
         msg.hereparams.traffic = msg.hereparams.traffic.toLowerCase();
       }
 
-
+// Old Here Routing 7.2 API - https://route.ls.hereapi.com/routing/7.2/calculateroute.json?waypoint0=geo!'+msg.hereparams.waypoint0+'&waypoint1=geo!'+ msg.hereparams.waypoint1 + '&mode='+ msg.hereparams.routetype+';'+ msg.hereparams.transport+';traffic:'+ msg.hereparams.traffic +'&apiKey='+apiKey
       (async () => {
         try {
-          const response = await axios.get('https://route.ls.hereapi.com/routing/7.2/calculateroute.json?waypoint0=geo!'+msg.hereparams.waypoint0+'&waypoint1=geo!'+ msg.hereparams.waypoint1 + '&mode='+ msg.hereparams.routetype+';'+ msg.hereparams.transport+';traffic:'+ msg.hereparams.traffic +'&apiKey='+apiKey);
+          const response = await axios.get('https://router.hereapi.com/v8/routes?origin='+msg.hereparams.waypoint0+'&destination'+ msg.hereparams.waypoint1 + '&transportMode='+ msg.hereparams.transport+'&return=polyline,actions,instructions&lang=en'+'&apiKey='+apiKey);
           //console.log(response.data)
           msg.payload = response.data;
           node.send(msg);
